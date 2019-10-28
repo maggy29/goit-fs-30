@@ -1,0 +1,144 @@
+/* general */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Playfair Display', 'Arial', serif;
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+    line-height: 24px;
+}
+/* header */
+
+
+.main-nav {
+    padding: 70px 0;
+    margin-bottom: 26px;}
+
+.main-menu-navigation{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-menu-navigation li {
+    display: inline-block;
+}
+
+.main-menu-navigation li:not(:last-child) {
+    margin-right: 108px;
+}
+
+.main-menu-navigation a{
+    color: rgb(98, 98, 98);
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+
+.main-menu-navigation a:hover,
+.main-menu-navigation a:focus{
+    color: rgb(3, 169, 244);
+    }
+
+/* main */
+
+.main-content {
+    margin-bottom: 50px;
+}
+
+.page-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.page-item {
+    width: 420px;
+    display: inline-block;
+    margin-bottom: 130px;
+}
+
+.page-item:not(:nth-child(2n)) {
+    margin-right: 60px;
+}
+
+.page-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+}
+
+.item-identification{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(199, 193, 182);
+    line-height: 17px;
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+
+.item-heading{
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+
+.item-text {
+    font-size: 14px;
+}
+
+.item-text li:not(:+ n - 2)
+
+.additional-navigation {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.button {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 18px 32px;
+    box-sizing: border-box;
+    border: 1px solid rgb(98, 98, 98);
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 auto 70px auto;
+    display: block;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: insert(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
