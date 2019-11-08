@@ -1,0 +1,224 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    display: table;
+    content:'';
+    clear: both;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #555252;
+    font-weight: 400;
+}
+
+.page-header {
+    margin-bottom: 122px;
+}
+
+.page-nav {
+    padding-top: 36px;
+}
+
+.site-header {
+    float: left;
+    margin: 0;
+}
+
+.logo {
+    font-size: 30px;
+    line-height: 32px;
+    color: #555252;
+    font-family: "Roboto", 'Arial, sans-serif';
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    }
+
+.logo::first-letter {
+    color:#1abc9c;
+    font-weight: 900;
+}
+
+.site-menu {
+    list-style: none;
+    line-height: 11px;
+    font-weight: 700;    
+    text-transform: uppercase;
+    width: 470px;
+    margin: 0;
+    padding: 0;
+    padding-top: 11px;
+    float: right;
+}
+
+.site-menu-item {
+    float: left;
+}
+
+.site-menu-item:not(:last-child) {
+    margin-right: 28px;}
+
+.site-menu a {
+    color: #0f0101;
+    text-decoration: none;
+}
+
+.site-menu a:hover,
+.site-menu a:focus {
+    color: #1abc9c;
+}
+
+.products {
+    margin-bottom: 108px;
+}
+
+.section-heading {
+    font-size: 48px;
+    line-height: 32px;
+    color: #515151;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 92px;    
+    text-align: center;
+}
+
+.section-heading::after {
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    content: '';
+    margin: 0 auto;
+    margin-top: 34px;
+}
+
+.products-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.products-item {
+    float: left;
+}
+
+.products-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.products-item:not(:nth-last-child(-n + 4)) {
+    margin-bottom: 30px;
+}
+
+.products-item:hover .name {
+    background-color: #1abc9c;
+}
+
+.products-item:hover .price {
+    background-color: #7fd9c7;
+}
+
+.products-item button {
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    min-height: 40px;
+    float: left;
+    border: none;
+}
+
+.name {
+    background-color:#323232;
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 0;
+    text-align: unset;
+}
+
+.price {
+    background-color: #8c8c8c;
+    width: 55px;
+}
+
+.news {
+    margin-bottom: 45px;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-item{
+    float: left;
+    width: 350px;
+}
+
+.news-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.news-item a {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.news-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.news-item h3::after {
+    display: block;
+    width: 136px;
+    height: 3px;
+    background-color: #1abc9c;
+    content: '';
+    margin-top: 12px;
+}
+
+.news-item button {
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+    background-color: #1abc9c;
+    width: 160px;
+    min-height: 50px;
+    border-radius: 3px;
+    border: none;
+}
