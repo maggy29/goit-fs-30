@@ -241,6 +241,14 @@ body {
     border-radius: 2px;
 }
 
+.required:valid {
+    outline-color: #00ff00;
+}
+
+.required:invalid {
+    outline-color: #ff0000;
+}
+
 .contact-form-item::placeholder {
     color: #bbbbbb;
     text-transform: uppercase;
